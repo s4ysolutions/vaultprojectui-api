@@ -1,0 +1,39 @@
+{
+  "name": "vaultprojectui-api",
+  "version": "1.0.0",
+  "description": "API level of HashiCorp Vault WEB UI",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s4ysolutions/vaultprojectui-api.git"
+  },
+  "keywords": [
+    "HashiCorp",
+    "Vaultproject"
+  ],
+  "author": "S4Y Solution <sergey@s4y.solutions>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/s4ysolutions/vaultprojectui-api/issues"
+  },
+  "homepage": "https://github.com/s4ysolutions/vaultprojectui-api#readme",
+  "dependencies": {
+    "apollo-server-koa": "1.1.2",
+    "graphql": "0.10.5",
+    "graphql-tools": "1.2.2",
+    "seneca": "3.4.2",
+    "winston": "2.3.1"
+  },
+  "devDependencies": {
+    "apollo-client": "1.9.2",
+    "chai": "4.1.2",
+    "chai-as-promised": "7.1.1",
+    "graphql-tag": "2.4.2",
+    "mocha": "3.5.0",
+    "supertest": "3.0.0"
+  }
+}
