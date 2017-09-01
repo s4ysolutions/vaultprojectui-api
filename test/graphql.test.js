@@ -81,7 +81,7 @@ const shutdownServer = () => {
   server.close();
 }
 //]]]
-describe("/graphql", function() {
+describe("GraphQL", function() {
   before(async function()  {
     this.timeout(5000);
     await initServer();
@@ -91,9 +91,15 @@ describe("/graphql", function() {
     await shutdownServer();
   });
 
-  it("ping",async ()=>{
+  it("ping inline",async function(){
     const response = await query({query: gql`query ping {ping}`});
     expect(response).to.have.property("data");
     expect(response.data).to.have.property("ping","Ok!");
+  })
+
+  it("ping seneca",async function(){
+    const response = await query({query: gql`query ping {pingSeneca}`});
+    expect(response).to.have.property("data");
+    expect(response.data).to.have.property("pingSeneca","Ok!");
   })
 })

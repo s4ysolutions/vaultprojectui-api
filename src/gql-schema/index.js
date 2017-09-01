@@ -1,6 +1,7 @@
 module.exports = `
 type Query {
   ping: String!
+  pingSeneca: String!
 }
 
 schema {
