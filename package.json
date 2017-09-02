@@ -25,11 +25,15 @@
     "apollo-server-koa": "1.1.2",
     "graphql": "0.10.5",
     "graphql-tools": "1.2.2",
+    "javascript-state-machine": "3.0.1",
+    "rxjs": "5.4.3",
     "seneca": "3.4.2",
+    "superagent": "3.6.0",
     "winston": "2.3.1"
   },
   "devDependencies": {
     "apollo-client": "1.9.2",
+    "artillery": "1.6.0-6",
     "chai": "4.1.2",
     "chai-as-promised": "7.1.1",
     "graphql-tag": "2.4.2",

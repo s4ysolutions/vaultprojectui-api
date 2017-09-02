@@ -5,8 +5,10 @@ const log = new (winston.Logger)({
   transports: [
     new (winston.transports.Console)({
       level: config.log.level || "warn",
-      "timestamp": true,
-      "colorize": true
+      prettyPrint: true,
+      timestamp: true,
+      silent: false,
+      colorize: true
     })
   ]
 });
